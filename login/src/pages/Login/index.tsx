@@ -1,10 +1,9 @@
 import { Container, ForgetPassword, Wrapper } from "./Login.Styled";
 import Logo from "../../assets/Logo-7.svg";
 import { useState } from "react";
-import { Modal } from "../../components/Modal";
+import { Link } from "react-router-dom";
 
 export const Login: React.FC = () => {
-    const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <Container>
       <img src={Logo} alt="" />
@@ -26,18 +25,17 @@ export const Login: React.FC = () => {
             type="text"
             placeholder="Insira sua senha"
           ></input>
-        </form>
-        <button type="submit">Entrar</button>
-        <ForgetPassword>
-          <p>Não tem conta?</p>
-          <button onClick = { () => setIsModalVisible(true) } className="button-senha-redefinir">Cadastre-se aqui</button> {isModalVisible ? 
-          <Modal /> : null} 
-        </ForgetPassword>
-        <ForgetPassword>
+            <ForgetPassword>
           <p>Esqueceu a senha?</p>
           <button className="button-senha-redefinir">Redefinir senha</button>
         </ForgetPassword>
+        </form>
       </Wrapper>
+      <button type="submit">Entrar</button>
+        <ForgetPassword>
+          <p>Não tem conta?</p>
+          <button  className="button-senha-redefinir">Cadastre-se aqui</button> 
+        </ForgetPassword>
     </Container>
   );
 };

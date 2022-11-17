@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding-bottom: 1%;
+  padding-bottom: 3%;
   padding-top: 2%;
   max-width: 600px;
   margin: 0 auto;
@@ -24,8 +24,7 @@ export const Container = styled.div`
     font-weight: 700;
     color: var(--white);
     font-family: "Montserrat", sans-serif;
-    margin-top: 5%;
-    cursor: pointer;
+    margin-top: 4%;
   }
 `;
 
@@ -65,6 +64,7 @@ export const Wrapper = styled.div`
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     padding-left: 4%;
+    padding-right: 2%;
     font-size: 15px;
     border: 1px solid grey;
     color: grey;
@@ -80,34 +80,5 @@ export const Wrapper = styled.div`
   form {
     display: flex;
     flex-direction: column;
-  }
-`;
-
-export const ForgetPassword = styled.div`
-  align-items: baseline;
-  display: flex;
-  justify-content: center;
-
-  button {
-    width: 150px;
-    height: 20px;
-    padding-left: -30%;
-    color: var(--orange);
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  div {
-    align-items: baseline;
-    display: flex;
-    justify-content: center;
-  }
-
-  p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    margin-top: 1%;
-    color: gray;
-    opacity: 55%;
   }
 `;
