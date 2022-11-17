@@ -26,6 +26,7 @@ export const Container = styled.div`
     font-family: "Montserrat", sans-serif;
     margin-top: 5%;
     cursor: pointer;
+    margin-left: 32%;
   }
 `;
 
@@ -87,6 +88,7 @@ export const ForgetPassword = styled.div`
   align-items: baseline;
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 
   button {
     width: 150px;
@@ -96,6 +98,13 @@ export const ForgetPassword = styled.div`
     background-color: transparent;
     cursor: pointer;
   }
+
+.link{
+  padding-left: 2%;
+  color: var(--orange);
+  font-weight: bold;
+  text-decoration: none;
+}
 
   div {
     align-items: baseline;

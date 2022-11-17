@@ -1,16 +1,8 @@
-import React from 'react';
-import { Login } from './pages/Login';
-import { LogOut } from './pages/LogOut';
-import { SignUp } from './pages/SignUp';
+import React from "react";
+import { Router } from "./Router";
 
 function App() {
-  return (
-   <>
-   {/* <Login /> */}
-   {/* <SignUp /> */}
-   <LogOut />
-   </>
-  );
+  return <Router />;
 }
 
 export default App;

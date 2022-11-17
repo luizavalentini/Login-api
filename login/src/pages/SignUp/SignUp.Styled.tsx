@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   padding-top: 2%;
   max-width: 600px;
   margin: 0 auto;
@@ -25,7 +25,17 @@ export const Container = styled.div`
     color: var(--white);
     font-family: "Montserrat", sans-serif;
     margin-top: 4%;
+    margin-left: 32%;
+    cursor: pointer;
   }
+
+  .link{
+    padding-top: 4%;
+  padding-left: 2%;
+  color: var(--orange);
+  font-weight: bold;
+  text-decoration: none;
+}
 `;
 
 export const Wrapper = styled.div`
