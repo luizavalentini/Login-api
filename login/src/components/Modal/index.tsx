@@ -1,45 +1,46 @@
 import React, { useContext } from "react";
-import { WrapperModal } from "./Modal.Styled";
-import Logo2 from "../../assets/Logo-8.svg";
+import { Wrapper } from "./Modal.Styled";
+import editaUsuario from "../../assets/edita-usuario.svg";
 
 export const Modal = () => {
+
   return (
-    <WrapperModal>
+    <Wrapper>
       <div>
-        <img src={Logo2}></img>
-        <form>
-          <label htmlFor="nome">Nome Completo:</label>
+        <img src={editaUsuario} ></img>
+        <form >
+          <label htmlFor="nome">Insira seu nome</label>
           <input
             required
             id="nome"
             type="text"
             placeholder="Insira seu nome"
           />
-          <label htmlFor="cpf">CPF:</label>
+          <label htmlFor="cpf">Data de nascimento</label>
+          <input
+            required
+            id="dataNascimento"
+            type="text"
+            placeholder="Insira seu CPF"
+          ></input>
+          <label htmlFor="rg">Insira seu CPF</label>
           <input
             required
             id="cpf"
             type="text"
             placeholder="Insira seu CPF"
           ></input>
-          <label htmlFor="rg">RG:</label>
+          <label htmlFor="cnh">Insira seu e-mail</label>
           <input
             required
-            id="rg"
+            id="email"
             type="text"
-            placeholder="Insira seu RG"
+            placeholder="Insira sua e-mailNH"
           ></input>
-          <label htmlFor="cnh">CNH:</label>
-          <input
-            required
-            id="cnh"
-            type="text"
-            placeholder="Insira sua CNH"
-          ></input>
-          <button type="submit">Cadastrar</button>
+          <button type="submit"> Cadastrar </button>
         </form>
       </div>
-    </WrapperModal>
+    </Wrapper>
   );
 };
 

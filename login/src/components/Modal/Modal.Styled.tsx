@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const WrapperModal = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding-top: 7.5%;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,15 +12,13 @@ export const WrapperModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img{
-   padding-top: -2%;
-  }
+  padding-top: 8%;
 
   div {
     background-color: var(--white);
     width: 35%;
     height: 85%;
+    flex-direction: column;
     border-radius: 20px;
     padding-top: 2%;
     padding-left: 1.6%;
@@ -41,7 +38,6 @@ export const WrapperModal = styled.div`
 
   img {
     text-align: center;
-    margin-bottom: 3%;
   }
 
   input {
